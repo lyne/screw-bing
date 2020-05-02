@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "ScrewBing",
+    "description": "Screw bing and start using DuckDuckGo",
+    "version": "0.1.0",
+    "author": "lyne",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.bing.com/search*"
+            ],
+            "run_at": "document_start",
+            "js": [
+                "redirect.js"
+            ]
+        }
+    ]
+}
