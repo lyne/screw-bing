@@ -9,18 +9,18 @@
         "48": "icon48.png",
         "128": "icon128.png"
     },
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
     "browser_action": {
         "default_icon": "icon128x128.png"
     },
-    "content_scripts": [
-        {
-            "matches": [
-                "https://www.bing.com/search*"
-            ],
-            "run_at": "document_start",
-            "js": [
-                "redirect.js"
-            ]
-        }
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "*://bing.com/*",
+        "*://www.bing.com/*"
     ]
 }
