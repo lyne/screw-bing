@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Screw Bing",
     "description": "Screw Bing and start using DuckDuckGo",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "author": "lyne",
     "icons": {
         "16": "icon16.png",
